@@ -6,9 +6,11 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-MONTH_LIST = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
+MONTH_LIST = ["january", "february", "march", "april", "may", "june", "july", \
+            "august", "september", "october", "november", "december"]
 
-DAY_LIST = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+DAY_LIST = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", \
+            "sunday"]
 
 Months = Enum("Months", MONTH_LIST)
 
@@ -24,7 +26,8 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington).
+    # HINT: Use a while loop to handle invalid inputs
     city = input('City name: ').lower()
     while(city not in ["chicago", "new york city", "washington"]):
         print("Please give a valid city name (chicago, new york city, washington): ", end="")
