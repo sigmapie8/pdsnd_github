@@ -14,6 +14,23 @@ Thanks to the rise in information technologies, it is easy for a user of the sys
 
 In this project, we used the data provided by Motivate, a bike share system provider for many major cities in the United States, to uncover bike share usage patterns. We compared the system usage between three large cities: Chicago, New York City, and Washington, DC.
 
+### Usage
+
+In order to use the code in this project you'd need 3 data files:
+1. chicago.csv
+2. new_york_city.csv
+3. washington.csv
+
+with data in the following format:
+* Start Time (e.g., 2017-01-01 00:07:57)
+* End Time (e.g., 2017-01-01 00:20:53)
+* Trip Duration (in seconds - e.g., 776)
+* Start Station (e.g., Broadway & Barry Ave)
+* End Station (e.g., Sedgwick St & North Ave)
+* User Type (Subscriber or Customer)
+* Gender
+* Birth Year
+
 ### Files used
 
 - bikeshare_2.py
